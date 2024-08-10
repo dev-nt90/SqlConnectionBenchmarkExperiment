@@ -1,0 +1,1 @@
+A thought experiment. What happens if you re-use a sql connection instead of immediately disposing of it? As it turns out, you get a ~50ns performance boost. Considering this is about how long it takes to allocate the memory for the sql connection object, the results aren't incredibly surprising, but hey, that's science for ya.
